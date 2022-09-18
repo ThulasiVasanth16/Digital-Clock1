@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+body{
+    font-family: 'Bebas Neue',cursive;
+    overflow: hidden;
+    background-image: url('waterfall.jpg'),url('photo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+.img-wrapper{
+    position: relative;
+    overflow: hidden;
+}
+.container{
+    width: 95%;
+    height: 100vh;
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-wrapper > .digitalClock{
+    position:absolute ;
+    inset:0;
+    font-size:2rem;
+    padding: 1rem;
+
+    background: rgba(255,255,255,.4);
+}
+
+.digitalClock{
+    width: fit-content;
+    margin: auto;
+    padding: 10px;
+    border-radius: 2px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+/*   16 *5=80px  */
+.digitalClock h1{
+    display: inline-block;
+    margin: 0 10px;
+    font-weight:normal;
+    font-size: 5rem;
+}
+
+@media (max-width:768px){
+    #bar1,#bar2{
+        display: none;
+    }
+    .digitalClock{
+        text-align: center;
+        width: 100%;
+    }
+    .digitalClock{
+        display: block;
+
+    }
+}
+@media(max-width:1024px){
+    
+    #bar1,#bar2{
+        display: none;
+    }
+    .digitalClock{
+        text-align: center;
+        width: 100%;
+    }
+    .digitalClock{
+        display: block;
+
+    }
+}
+
+@media(max-width:480px){
+    .digitalClock h1{
+        font-size: 4rem;
+    }
+}
